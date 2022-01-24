@@ -1,0 +1,137 @@
+ /* Global css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 60%;
+    margin: 1rem auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+   padding-top: 60px;
+}
+/* Navbar css */
+.company-name{
+    font-size: 1.5rem;
+}
+li{
+   margin: 0 .5rem;
+   padding: 0 1rem;
+}
+
+li a:hover{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+li a.active{
+   font-weight: bold;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Our services css */
+.category-content{
+   max-width: 1000px;
+   margin: 3rem auto;
+}
+
+.serviceIntro {
+   text-align: center;
+}
+
+.card{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+   text-align: center;
+}
+
+/* Modal Box css */
+.serviceImg, .serviceDetail {
+   flex-basis: 50%;
+}
+
+.serviceDetail {
+   margin-left: 10px;
+}
+
+.serviceDetail label {
+   font-size: 18px;
+}
+
+/* Footer css */
+.footer{
+   background-color: whitesmoke;
+   padding: 1rem 0;
+   margin-top: 1rem;
+   box-shadow: 0 4px 8px 0;
+}
+.socialMedia a{
+   font-size: 1.5rem;
+}
+
+.footer-link{
+   display: flex;
+   justify-content: center;
+}
+
+.footer-link a:not(:last-child){
+   margin-right: 2rem;
+}
+
+.footer-link a:hover{
+   font-weight: bold;
+   color: #000;
+}
+
+/* Responsive css */
+@media screen and (max-width: 1228px) {
+
+}
+
+@media screen and (max-width: 1068px) {
+
+}
+
+@media screen and (max-width: 968px) {
+
+   .serviceInfo {
+      display: none;
+   }
+
+}
+
+@media screen and (max-width: 768px) {  
+
+
+   
+}
+
+@media screen and (max-width: 576px) {  
+
+   .serviceImg {
+      display: none;
+   }
+   
+}
+
+
+@media screen and (max-width: 375px) {  
+
+}
+
+
+
+
+
