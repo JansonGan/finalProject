@@ -2,6 +2,10 @@
 .company-name{
     font-size: 1.5rem;
 }
+
+#logoPic {
+    height: 20px;
+}
 li{
    margin: 0 .5rem;
    padding: 0 1rem;
