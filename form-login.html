@@ -15,6 +15,12 @@
 
     <!-- Form page CSS -->
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/common.css">
+
+
+
+    <!-- include login JS -->
+    <script src="js/login.js"></script>
 
     <title>Login</title>
   </head>
@@ -24,7 +30,9 @@
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a href="" class="navbar-brand company-name">LeleLand</a>
+                <div class="logo">
+                    <a href="" class="navbar-brand company-name"><i class="fas fa-paw"></i><img src="./images/logo leleland-2.png" alt="Logo" id="logoPic"></a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +41,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link px-3" aria-current="page" href="#">Home</a>
+                            <a class="nav-link px-3" aria-current="page" href="/finalProject/index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" aria-current="page" href="#">About Us</a>
+                            <a class="nav-link px-3" aria-current="page" href="/finalProject/aboutus.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-3" aria-current="page" href="#">Services</a>
+                            <a class="nav-link px-3" aria-current="page" href="/finalProject/service.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="#">Form</a>
+                            <a class="nav-link active px-3" aria-current="page" href="/finalProject/form-login.html">Form</a>
                         </li>
                     </ul>
                 </div>
@@ -63,22 +71,19 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="inputUsername" class="form-label">User Name</label>
-                        <input type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp">
+                        <label for="username" class="form-label">User Name</label>
+                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                     </div>
 
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password">
                     </div>
 
-                    <!-- <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
+                    
 
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-success" onclick="validate()" id="submit">Login</button>
 
                     <button type="submit" class="btn btn-outline-secondary">Clear</button>
                 </form>
@@ -105,9 +110,9 @@
     
         <!-- Webpage link -->
         <div class="footer-link">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Services</a>
+            <a href="/finalProject/index.html">Home</a>
+            <a href="/finalProject/aboutus.html">About Us</a>
+            <a href="/finalProject/service.html">Services</a>
             <a href="">Contact Us</a>
         </div>
     
@@ -120,27 +125,7 @@
     
     
 
-    <!-- Model for wrong login -->
-
-    <!-- <div class="modal fade" id="wrongLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Oops! Somethings' wrong</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                Username and Password does not match
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
-    <!-- end of Model for wrong login-->
+    
 
  
 
