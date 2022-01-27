@@ -1,38 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!--fontawesomw-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-
-    <!-- Form page CSS -->
-    <link rel="stylesheet" href="css/form.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="css/homeStyles.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <title>LeleLan Pet Services</title>
+</head>
 
-
-
-    <!-- include login JS -->
-    <script src="js/login.js"></script>
-
-    <title>Login</title>
-  </head>
-  <body>
-    
+<body>
     <header>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <div class="logo">
-                    <a href="" class="navbar-brand company-name"><i class="fas fa-paw"></i><img src="./images/logo leleland-2.png" alt="Logo" id="logoPic"></a>
-                </div>
+                <a href="" class="navbar-brand company-name">LeleLand</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link px-3" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-3" aria-current="page" href="aboutus.html">About Us</a>
@@ -50,7 +44,7 @@
                             <a class="nav-link px-3" aria-current="page" href="service.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active px-3" aria-current="page" href="form-login.html">Form</a>
+                            <a class="nav-link px-3" aria-current="page" href="form-login.html">Form</a>
                         </li>
                     </ul>
                 </div>
@@ -59,45 +53,48 @@
         <!-- Navbar end -->
     </header>
 
+    <!-- Contact form start -->
     <main>
-        <!-- background pic when login -->
-        <div class="bg-image">
+        <div class="flex-container">
+            <section class="top-img">
+                <img src="images/cnt-img2.jpg" alt="">
+            </section>
 
-            <!-- login form -->
-            <div class="loginForm">
-                <form>
-                    <div class="mb-3">
-                        <h3>User Login</h3>
+            <section class="contact-form">
+                <form action="" method="POST">
+                    <div class="form-title">
+                        <h3>Contact Us</h3>
                     </div>
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name:</label>
+                            <input type="text" name="contactName" id="contactName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Your Email:</label>
+                            <input type="email" name="contactEmail" id="contactEmail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Your Message:</label>
+                            <textarea name="message" id="textarea" cols="30" rows="5" maxlength="200"
+                                class="form-control"></textarea>
+                        </div>
 
-                    <div class="mb-3">
-                        <label for="username" class="form-label">User Name</label>
-                        <input type="text" class="form-control" id="username" aria-describedby="emailHelp">
-                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                        <button type="submit" class="btn btn-success btn-block mt-lg-3">Submit</button>
+
                     </div>
-
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-
-                    
-
-                    <button type="submit" class="btn btn-success" onclick="validate()" id="submit">Login</button>
-
-                    <button type="submit" class="btn btn-outline-secondary">Clear</button>
                 </form>
-            </div>
-            <!-- end of login form -->
-
+            </section>
         </div>
     </main>
+    <!-- Contact form end -->
 
+    <hr>
 
-    
-     <footer class="text-center">
+    <!--footer start-->
+    <footer class="text-center">
         <div class="container">
-             <!--Social media icon-->
+            <!--Social media icon-->
             <section class="socialMedia">
                 <p>Find us on social media</p>
                 <a href="" class="btn btn-link btn floating btn-lg"><i class="fab fa-facebook-square"></i></a>
@@ -107,31 +104,28 @@
                 <a href="" class="btn btn-link btn floating btn-lg"><i class="fab fa-youtube"></i></a>
             </section>
         </div>
-    
+
         <!-- Webpage link -->
         <div class="footer-link">
             <a href="index.html">Home</a>
             <a href="aboutus.html">About Us</a>
             <a href="service.html">Services</a>
-            <a href="contactUs.html">Contact Us</a>
+            <a href="">Contact Us</a>
         </div>
-    
-         <!--Copyright-->
+
+        <!--Copyright-->
         <div class="footer p-2">
             &copy 2022 Copyright All Rights Reserves <a href="index.html"
                 style="text-decoration: none; color: black;">LeleLand</a>
         </div>
     </footer>
-    
-    
+    <!--footer end-->
 
-    
 
- 
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    
-  </body>
 </html>
