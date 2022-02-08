@@ -14,10 +14,16 @@ li{
 li a:hover{
    font-weight: bold;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: #01730d;
+   color: #fff!important;
+   border-radius: 5px;
 }
 li a.active{
    font-weight: bold;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: #01730d;
+   color: #fff!important;
+   border-radius: 5px;
 }
 
 .navbar{
