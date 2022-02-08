@@ -4,7 +4,7 @@ function validate(){
     var password = document.getElementById("password").value;
     if ( username == "admin" && password == "nimda"){
         alert ("Login successfully");
-        window.location.href = "./form-upload-product.html"; // Redirecting to other page.
+        window.location.href = "form-upload-product.html"; // Redirecting to other page.
         return false;
     }
     else{
