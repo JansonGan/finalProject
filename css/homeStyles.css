@@ -3,6 +3,10 @@
      margin: 0;
      padding: 0;
  }
+
+ body {
+     background-color: #e8e8e8;
+ }
  hr{
      width: 60%;
      margin: 5rem auto;
@@ -95,8 +99,8 @@ li a.active{
     margin: 0 auto;
     padding: 1.5rem;
     text-align: center;
-    background-color: #064729;
-    color: #c9c9c9;
+    background-color: #01730d;
+    color: #ebebeb;
     border-radius: 0 50px 0px;
 }
 
