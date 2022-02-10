@@ -8,12 +8,62 @@ body{
     background-color: #e8e8e8;
 }
 
+p{
+    margin: 0;
+}
+
 #topHeader {
     background-color: #368B85;
     color: #fff;
-    padding: 5rem 0 15rem;
+    padding: 5rem 0;
 }
 
-#location {
-    margin: 0;
+#contact {
+    margin: 5rem;
+    text-align: center;
 }
+
+#location > p, #contactNumber > p, #email > p {
+    text-align: left;
+}
+
+#contactIcon {
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+#enquiries {
+    margin: 5rem 0 0;
+}
+
+#contactForm {
+    background-color: #e3e4e4;
+    padding: 2rem 0;
+    margin: 5rem 0;
+}
+
+#formContainer {
+ display: flex;
+justify-content: center;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+padding: 1rem;
+}
+
+#form {
+    width: 50%;
+    /* margin-left: 1rem; */
+    padding: 1rem;
+}
+
+#formImage {
+    width: 50%;
+    background-image: url("/images/dog-02.jpg");
+    background-size: cover;
+    /* margin-right: 1rem; */
+    padding: 1rem;
+}
+
+#character {
+    float: right;
+}
+
