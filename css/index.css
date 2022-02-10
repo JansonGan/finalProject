@@ -75,9 +75,18 @@ li a.active{
 }
 
 /* Our shop css */
+.our-shop {
+    background-color: #d6d4d4;
+    padding: 15px 0;
+}
+
 .intro-content-box{
     max-width: 750px;
     margin: 3rem auto;
+}
+
+#intro-content > p{
+    font-size: 18px;
 }
 
 /* Our services css */
