@@ -2,6 +2,15 @@ main {
     padding-top: 80px;
 }
 
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+ }
+
 .bg-image {
-    padding-top: 10px;
+   
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
