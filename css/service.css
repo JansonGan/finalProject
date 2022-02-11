@@ -70,6 +70,14 @@ li a.active{
    font-size: 18px;
 }
 
+#datepicker {
+   margin: 0;   
+}
+
+#datepicker > [class^=col-lg] {
+   padding: 0;
+}
+
 /* Footer css */
 .footer{
    background-color: whitesmoke;
@@ -101,21 +109,20 @@ li a.active{
 }
 
 @media screen and (max-width: 1068px) {
-
+   
+   .serviceInfo {
+      display: none;
+   }
+   
 }
 
 @media screen and (max-width: 968px) {
 
-   .serviceInfo {
-      display: none;
-   }
 
 }
 
 @media screen and (max-width: 768px) {  
 
-
-   
 }
 
 @media screen and (max-width: 576px) {  
