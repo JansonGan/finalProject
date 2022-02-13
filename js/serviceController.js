@@ -48,7 +48,7 @@ class Service {
 
         }); //End of forEach loop
         
-        document.querySelector('.row').innerHTML = serviceDetails;
+        document.querySelector('#serviceRow').innerHTML = serviceDetails;
 
         index = 0;
         this.serviceItems.forEach(item => {
