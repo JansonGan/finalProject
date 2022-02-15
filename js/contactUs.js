@@ -39,11 +39,9 @@ function submitMessage() {
 
     }
 
-}
-
-function alertMessage() {
-    document.querySelector("#alert").style.display = "none";
-}
+// function alertMessage() {
+//     document.querySelector("#alert").style.display = "none";
+// }
 
 
 
