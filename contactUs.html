@@ -121,32 +121,34 @@
 
         <section id="contactForm">
             <div class="container" id="formContainer">
-                <div id="formImage">
-                   
+                <div class="img-fluid" id="formImage">
                 </div>
                 <div id="form">
-                    <form action="">
+                    <form action="" onsubmit="event.preventDefault(); submitMessage()">
                         <h5>Send Us A Message</h5>
+                        <p id="alert" class="alert alert-warning p-2" role="alert">All fields cannot be empty.</p>
+
                         <div class="mb-2">
-                            <label for="username" class="form-label">Name:</label>
-                            <input type="text" name="username" id="username" class="form-control">
+                            <label for="username" class="form-label">Name<span class="asterisk">*</span></label>
+                            <input type="text" name="username" id="username" class="form-control" required>
                         </div>
                         <div class="mb-2">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" name="email" id="email" class="form-control">
+                            <label for="email" class="form-label">Email<span class="asterisk">*</span>:</label>
+                            <input type="email" name="email" id="eMail" class="form-control" required>
                         </div>
                         <div class="mb-2">
-                            <label for="enquiryType" class="form-label">Enquiry Type:</label>
-                            <select class="form-select" name="enquiryType" id="enquiryType">
-                                <option selected>Please Select One</option>
+                            <label for="enquiryType" class="form-label">Enquiry Type<span class="asterisk">*</span>:</label>
+                            <select class="form-select" name="enquiryType" id="enquiryType" required>
+                                <option value="" disabled selected>Please Select One</option>
                                 <option value="services">Sevices</option>
                                 <option value="pet wellness">Pet Wellness</option>
                                 <option value="business">Business Opportunity</option>
+                                <option value="business">Feedback</option>
                               </select>
                         </div>
                         <div class="mb-2">
-                            <label for="textarea" class="form-label">Message:</label><label for="" id="character">Max Character: <span id="charNum">200</span><span> / 200</span></label>
-                            <textarea name="message" id="textarea" cols="20" rows="8" class="form-control" maxlength="200" style="resize: none;"></textarea>
+                            <label for="textarea" class="form-label">Message<span class="asterisk">*</span>:</label><label for="" id="character">Max Character: <span id="charNum">200</span><span> / 200</span></label>
+                            <textarea name="message" id="textarea" cols="20" rows="8" class="form-control" maxlength="200" style="resize: none;" required></textarea>
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-success btn">Submit</button>
@@ -186,7 +188,7 @@
 
         <!--Copyright-->
         <div class="footer p-2">
-            &copy 2022 Copyright All Rights Reserves <a href="index.html"
+            &copy 2022 Copyright All Rights Reserves<a href="index.html"
                 style="text-decoration: none; color: black;">LeleLand</a>
         </div>
     </footer>
