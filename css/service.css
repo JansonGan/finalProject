@@ -15,10 +15,11 @@ a {
 }
 
 main {
-   padding-top: 60px;
+   padding-top: 56px;
 }
+
 /* Navbar css */
-.company-name{
+/* .company-name{
     font-size: 1.5rem;
 }
 li{
@@ -37,7 +38,7 @@ li a.active{
 
 .navbar{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* Our services css */
 .category-content{
@@ -45,16 +46,80 @@ li a.active{
    margin: 3rem auto;
 }
 
-.serviceIntro {
-   text-align: center;
+.carousel-item {
+   height: 500px;
+}
+
+.carousel-caption {
+   top: 20%;
+   max-width: 400px;
+   text-align: left;
+}
+
+.carousel-caption > h1 {
+   font-family: "Playfair Display", serif;
+   font-weight: 900;
+   font-style: italic;
 }
 
 .card{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
+.card:hover {
+   box-shadow: 5px 6px 6px 2px #e9ecef;
+   transform: scale(1.1);
+   color: #01730d;
+}
+
 .card-body {
    text-align: center;
+}
+
+.section-featured {
+   margin: 60px 30px;
+   width: auto;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.section-featured > .container-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.container-item > i {
+   font-size: 2.5rem;
+   color: #01730d;
+}
+
+.section-contact {
+   display: flex;
+   justify-content: right;
+   margin-bottom: 60px;
+   height: auto;
+}
+
+.contactDesc  {
+   width: 50%;
+   padding: 0 24px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   background-color: whitesmoke;
+}
+
+.section-contact > img {
+   width: 50%;
+}
+
+#contactBtn > a {
+   text-decoration: none;
+   color: white;
 }
 
 /* Modal Box css */
@@ -79,7 +144,7 @@ li a.active{
 }
 
 /* Footer css */
-.footer{
+/* .footer{
    background-color: whitesmoke;
    padding: 1rem 0;
    margin-top: 1rem;
@@ -101,7 +166,7 @@ li a.active{
 .footer-link a:hover{
    font-weight: bold;
    color: #000;
-}
+} */
 
 /* Responsive css */
 @media screen and (max-width: 1228px) {
@@ -118,10 +183,34 @@ li a.active{
 
 @media screen and (max-width: 968px) {
 
+   #carouselService {
+      display: none;
+   }
+
+   .container-item > p {
+      display: none;
+   }
+
+   .contactDesc  {
+      width: 100%;
+      background-color: white;
+   }
+
+   .section-contact > img {
+      display: none;
+   }
+
+   .contactDesc > h2 {
+      display: none;
+   }
 
 }
 
 @media screen and (max-width: 768px) {  
+
+   .section-featured {
+      display: none;
+   }
 
 }
 
@@ -130,7 +219,7 @@ li a.active{
    .serviceImg {
       display: none;
    }
-   
+
 }
 
 
